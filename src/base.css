@@ -53,7 +53,7 @@ textarea {
 	--background-floating: var(--background-solid);
 	--background-secondary: var(--background-solid);
 	--background-accent: var(--background-solid);
-	--background-message-hover: rgba(var(--black), 0.35);
+	--background-message-hover: rgba(var(--black), 0.4);
 	--channeltextarea-background: transparent;
 	--deprecated-store-bg: transparent;
 	--background-modifier-hover: rgba(var(--black), 0.3);
