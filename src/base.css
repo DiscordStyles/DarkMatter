@@ -525,7 +525,7 @@ div[aria-label*="_SETTINGS"] aside>div::-webkit-scrollbar-track {
 
 /* Tab Bar */
 
-[class*="topPill"],
+div[class*="topPill"],
 nav>div[role="tablist"],
 .bd-tab-bar {
 	--background-accent: rgba(var(--accent));
