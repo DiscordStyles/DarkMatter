@@ -393,7 +393,7 @@ div[class^="channelTextArea-"] {
 	border-radius: 5px;
 }
 
-div[class^="channelTextArea-"]:focus-within:hover {
+div[class^="channelTextArea-"]:hover {
 	box-shadow: inset 0 0 0 2px rgba(var(--white), 0.15);
 }
 
