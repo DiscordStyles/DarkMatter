@@ -556,7 +556,7 @@ nav>div[role="tablist"],
 /* Tooltips */
 
 div[class^="tooltip-"] {
-	--background-floating: rgba(var(--accent), 1);
+	--background-floating: rgba(var(--accent-alt), 1);
 	--text-normal: #e0e0e0;
 }
 
