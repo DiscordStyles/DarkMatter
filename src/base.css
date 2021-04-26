@@ -151,7 +151,7 @@ div[class*="typeWindows-"]::after {
 
 ul[data-list-id='guildsnav'] {
 	--background-secondary: rgba(var(--white), 0.05);
-    	--background-primary: rgba(var(--white), 0.075);
+    	--background-primary: rgba(var(--white), 0.1);
 	margin-bottom: 70px;
 	background-color: rgba(var(--black), 0.6);
 	border-right: 1px solid rgba(var(--black), 0.2);
@@ -188,7 +188,7 @@ ul[data-list-id='guildsnav'] [class^="pill-"] span {
 
 span[class^="expandedFolderBackground-"] {
 	--background-secondary: rgba(var(--black), 0.35);
-	border-radius: 12px;
+	border-radius: 14px;
 	width: 40px;
 	left: 16px;
 }
