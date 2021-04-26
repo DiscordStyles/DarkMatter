@@ -398,7 +398,7 @@ div[class^="channelTextArea-"]:hover {
 }
 
 div[class^="channelTextArea-"]:focus-within {
-	box-shadow: inset 0 0 0 2px rgba(var(--accent-alt), 1);
+	box-shadow: inset 0 0 0 2px rgba(var(--accent), 1);
 }
 
 div[id^="chat-messages-"]+div:not([id]):last-child {
