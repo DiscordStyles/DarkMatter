@@ -186,6 +186,8 @@ button {
 }
 
 [class^="expandedFolderBackground-"] {
+	--background-secondary: rgba(var(--black), 0.35);
+	border-radius: 12px;
 	width: 40px;
 	left: 16px;
 }
