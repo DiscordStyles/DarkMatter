@@ -83,7 +83,7 @@ button {
 }
 
  ::selection {
-	background-color: rgba(var(--accent), 0.5);
+	background-color: rgba(var(--accent-alt), 0.5);
 }
 
 
@@ -451,8 +451,7 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 
 div[class*="barBase-"] {
 	padding-bottom: 0;
-	--background-accent: rgba(var(--accent-alt), 0.9);
-	--accentcolor: rgba(var(--accent-alt), 0.9);
+	background-color: rgba(var(--accent-alt), 0.9);
 }
 
 
