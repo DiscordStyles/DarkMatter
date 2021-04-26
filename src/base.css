@@ -442,6 +442,10 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 	border-radius: 5px;
 }
 
+.mention:hover {
+		background-color: rgba(var(--accent-alt), 0.3) !important;
+}
+
 #app-mount .container-1D34oG {
 	background: var(--background-primary);
 }
