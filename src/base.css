@@ -72,7 +72,7 @@ textarea {
 	--interactive-active: rgba(var(--white), 1);
 	--deprecated-card-bg: rgba(var(--white), 0.05);
 	--text-link: rgba(var(--accent-alt), 1);
-	--focus-primary: rgba(var(--accent), 1);
+	--focus-primary: rgba(var(--accent-alt), 1);
 }
 
  ::selection {
@@ -393,8 +393,12 @@ div[class^="channelTextArea-"] {
 	border-radius: 5px;
 }
 
+div[class^="channelTextArea-"]:focus-within:hover {
+	box-shadow: inset 0 0 0 2px rgba(var(--white), 0.15);
+}
+
 div[class^="channelTextArea-"]:focus-within {
-	box-shadow: inset 0 0 0 2px rgba(var(--accent), 1);
+	box-shadow: inset 0 0 0 2px rgba(var(--accent-alt), 1);
 }
 
 div[id^="chat-messages-"]+div:not([id]):last-child {
