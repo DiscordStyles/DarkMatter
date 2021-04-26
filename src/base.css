@@ -71,8 +71,12 @@ textarea {
 	--interactive-hover: rgba(var(--white), 0.75);
 	--interactive-active: rgba(var(--white), 1);
 	--deprecated-card-bg: rgba(var(--white), 0.05);
-	--text-link: rgba(var(--accent), 1);
+	--text-link: rgba(var(--accent-alt), 1);
 	--focus-primary: rgba(var(--accent), 1);
+}
+
+ ::selection {
+	background-color: rgba(var(--accent), 0.5);
 }
 
 
