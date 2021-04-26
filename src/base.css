@@ -5,8 +5,8 @@
 
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
-@import url('//fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
-@import url('//mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
  ::-webkit-input-placeholder,
 body,
 button,
@@ -22,23 +22,29 @@ textarea {
 	font-family: 'Karla', sans-serif !important;
 }
 
+button {
+	--accentcolor: var(--accent-alt);
+}
+
 
 /* Root Variables */
 
  :root {
 	/* Dark Matter Variables */
 	--avatar-size: 32px;
-	--background-image: url('//i.imgur.com/7SbtKvw.png');
-	--home-image: url('//i.imgur.com/233d55Y.gif');
+	--background-image: url('https://i.imgur.com/7SbtKvw.png');
+	--home-image: url('https://i.imgur.com/233d55Y.gif');
 	--background-solid: #161921;
 	--background-solid-dark: #101218;
 	--background-solid-darker: #0c0e12;
-	--accent: 29, 101, 134;
-	--accent-alt: 37, 172, 232;
+	--accent: 37, 172, 232;
+	--accent-alt: 29, 101, 134;
 	--black: 0, 0, 0;
 	--white: 255, 255, 255;
 	/* BlurpleRecolor */
 	--accentcolor: var(--accent);
+	--vaccentcolor-hover: rgb(var(--accent));
+	--vaccentcolor-active: rgb(var(--accent));
 }
 
 .theme-dark,
@@ -55,6 +61,7 @@ textarea {
 	--background-accent: var(--background-solid);
 	--background-message-hover: rgba(var(--black), 0.4);
 	--channeltextarea-background: transparent;
+	--activity-card-background: rgba(var(--white), 0.05);
 	--deprecated-store-bg: transparent;
 	--background-modifier-hover: rgba(var(--black), 0.3);
 	--background-modifier-active: rgba(var(--black), 0.3);
@@ -71,8 +78,8 @@ textarea {
 	--interactive-hover: rgba(var(--white), 0.75);
 	--interactive-active: rgba(var(--white), 1);
 	--deprecated-card-bg: rgba(var(--white), 0.05);
-	--text-link: rgba(var(--accent-alt), 1);
-	--focus-primary: rgba(var(--accent-alt), 1);
+	--text-link: rgba(var(--accent), 1);
+	--focus-primary: rgba(var(--accent), 1);
 }
 
  ::selection {
@@ -175,7 +182,7 @@ textarea {
 }
 
 [data-list-id='guildsnav'] [class^="pill-"] span[style^="opacity: 1; height: 40"] {
-	--header-primary: rgba(var(--accent-alt), 1);
+	--header-primary: rgba(var(--accent), 1);
 }
 
 [class^="expandedFolderBackground-"] {
@@ -254,7 +261,7 @@ div[class^='nowPlayingColumn'] {
 }
 
 #channels div[class^="unread-"] {
-    --interactive-active: rgba(var(--accent-alt), 1);
+	--interactive-active: rgba(var(--accent), 1);
 }
 
 
@@ -311,7 +318,7 @@ section[class*="themed-"] {
 	--background-secondary: rgba(var(--white), 0.1);
 }
 
-section>div>a[href="https://support.discord.com"] {
+section>div>a[href="https:https://support.discord.com"] {
 	display: none;
 }
 
@@ -436,14 +443,14 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 
 .mention {
 	transition: 150ms ease;
-	color: rgba(var(--accent-alt), 1) !important;
-	background-color: rgba(var(--accent-alt), 0.3);
+	color: rgba(var(--accent), 1) !important;
+	background-color: rgba(var(--accent), 0.3);
 	padding: 3px 5px;
 	border-radius: 5px;
 }
 
 .mention:hover {
-		background-color: rgba(var(--accent-alt), 0.3) !important;
+	background-color: rgba(var(--accent), 0.3) !important;
 }
 
 #app-mount .container-1D34oG {
@@ -452,8 +459,8 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 
 div[class*="barBase-"] {
 	padding-bottom: 0;
-	--background-accent: rgba(var(--accent), 0.9);
-	--accentcolor: rgba(var(--accent), 0.9);
+	--background-accent: rgba(var(--accent-alt), 0.9);
+	--accentcolor: rgba(var(--accent-alt), 0.9);
 }
 
 
@@ -551,6 +558,29 @@ nav>div[role="tablist"],
 div[class^="tooltip-"] {
 	--background-floating: rgba(var(--accent), 1);
 	--text-normal: #e0e0e0;
+}
+
+
+/* Buttons */
+
+button[class*="button-"][class*="color"],
+.bd-button {
+	--vaccentcolor: var(--accent-alt);
+}
+
+.bd-button {
+	--bd-blue: rgba(var(--accent-alt), 1);
+}
+
+
+/* Context Menu */
+
+div[role="menuitem"] {
+	--vaccentcolor: var(--accent-alt);
+}
+
+div[role="menuitem"]:active {
+	--vaccentcolor: var(--accent);
 }
 
 
@@ -663,7 +693,7 @@ div[class^="tooltip-"] {
 #app-mount .searchFilter-2ESiM3,
 #app-mount .option-1B5ZV8,
 #app-mount .pill-2pQByF {
-	background-color: rgba(var(--accent), 1);
+	background-color: rgba(var(--accent-alt), 1);
 	color: #fff;
 }
 
