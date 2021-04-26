@@ -175,7 +175,7 @@ textarea {
 }
 
 [data-list-id='guildsnav'] [class^="pill-"] span[style^="opacity: 1; height: 40"] {
-	--header-primary: rgba(var(--accent), 1);
+	--header-primary: rgba(var(--accent-alt), 1);
 }
 
 [class^="expandedFolderBackground-"] {
