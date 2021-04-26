@@ -569,7 +569,8 @@ div[class^="tooltip-"] {
 }
 
 #app-mount .codeRedemptionRedirect-1wVR4b,
-#app-mount .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+#app-mount .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC,
+#app-mount .inset-3sAvek {
 	background-color: var(--background-tertiary);
 	border: none;
 }
@@ -591,8 +592,7 @@ div[class^="tooltip-"] {
 #app-mount .quickSelectPopout-X1hvgV,
 .colorable-1bkp8v.primaryDark-3mSFDl,
 .tile-2naSqK,
-.videoWrapper-2v09vt,
-#app-mount .inset-3sAvek {
+.videoWrapper-2v09vt {
 	background-color: var(--background-solid);
 }
 
