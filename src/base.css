@@ -150,7 +150,7 @@ div[class*="typeWindows-"]::after {
 /* Guilds */
 
 ul[data-list-id='guildsnav'] {
-	--background-secondary: rgba(var(--white), 0.05);
+	--background-secondary: var(--background-solid);
     	--background-primary: rgba(var(--white), 0.1);
 	margin-bottom: 70px;
 	background-color: rgba(var(--black), 0.6);
