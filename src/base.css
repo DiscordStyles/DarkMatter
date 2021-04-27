@@ -3,8 +3,6 @@
  * The codebase was never designed to be pretty, it was designed to require as little maintenance as possible.
  */
 
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
  ::-webkit-input-placeholder,
