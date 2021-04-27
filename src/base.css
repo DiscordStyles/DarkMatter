@@ -627,7 +627,8 @@ div[role="menuitem"]:active {
 #app-mount .quickSelectPopout-X1hvgV,
 .colorable-1bkp8v.primaryDark-3mSFDl,
 .tile-2naSqK,
-.videoWrapper-2v09vt {
+.videoWrapper-2v09vt,
+#app-mount .spoilerText-3p6IlD.hidden-HHr2R9 {
 	background-color: var(--background-solid);
 }
 
