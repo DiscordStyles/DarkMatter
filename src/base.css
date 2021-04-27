@@ -302,6 +302,10 @@ nav+div[class^='base-'] {
 	max-width: calc(100% - 72px);
 }
 
+nav+div[class^='base-'] > div[class^="notice"] {
+	border-radius: 0;
+}
+
 div[class^='base-']>div {
 	--background-secondary: rgba(var(--black), 0.7);
 	--background-tertiary: rgba(var(--white), 0.05);
