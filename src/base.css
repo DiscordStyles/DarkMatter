@@ -598,7 +598,8 @@ div[role="menuitem"]:active {
 #app-mount .keyboardShortcutsModal-3piNz7,
 #app-mount .emojiAliasInput-1y-NBz .emojiInput-1aLNse,
 .perksModal-fSYqOq .perk-2WeBWW,
-#app-mount .uploadModal-2ifh8j {
+#app-mount .uploadModal-2ifh8j,
+#app-mount .contentWrapper-3WC1ID{
 	background-color: var(--background-primary);
 }
 
