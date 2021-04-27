@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
- ::-webkit-input-placeholder,
+::-webkit-input-placeholder,
 body,
 button,
 input,
@@ -170,7 +170,7 @@ ul[data-list-id='guildsnav'] [class^="pill-"]>div {
 }
 
 ul[data-list-id='guildsnav'] div[style*="height: 56"],
-div[id^="folder-items-"] {
+ul[id^="folder-items-"] {
 	height: auto !important;
 }
 
