@@ -587,7 +587,8 @@ div[role="menuitem"]:active {
 
 /* These use hardcoded colors, no need to bother with strange selectors */
 
-#app-mount .footer-2gL1pp {
+#app-mount .footer-2gL1pp,
+#app-mount .footer-3mqk7D {
 	background-color: var(--background-secondary);
 	box-shadow: none;
 }
@@ -596,7 +597,8 @@ div[role="menuitem"]:active {
 #app-mount .addGamePopout-2RY8Ju,
 #app-mount .keyboardShortcutsModal-3piNz7,
 #app-mount .emojiAliasInput-1y-NBz .emojiInput-1aLNse,
-.perksModal-fSYqOq .perk-2WeBWW {
+.perksModal-fSYqOq .perk-2WeBWW,
+#app-mount .uploadModal-2ifh8j {
 	background-color: var(--background-primary);
 }
 
