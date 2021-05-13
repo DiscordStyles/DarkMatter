@@ -261,7 +261,8 @@ div[id^="members-"] [class*="placeholder"] {
 }
 
 div[class^='nowPlayingColumn'] {
-	--background-secondary: rgba(var(--black), 0.5);
+	--background-secondary: transparent;
+	--background-primary: rgba(var(--black), 0.5);
 	--background-modifier-hover: rgba(var(--white), 0.075);
 }
 
