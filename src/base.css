@@ -5,20 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css');
-::-webkit-input-placeholder,
-body,
-button,
-input,
-select,
-textarea,
- ::placeholder,
-body,
-button,
-input,
-select,
-textarea {
-	font-family: 'Karla', sans-serif !important;
-}
 
 button {
 	--accentcolor: var(--accent-alt);
@@ -28,6 +14,8 @@ button {
 /* Root Variables */
 
  :root {
+	--font-primary: 'Karla', sans-serif;
+	--font-display: var(--font-primary);
 	/* Dark Matter Variables */
 	--avatar-size: 32px;
 	--background-image: url('https://i.imgur.com/7SbtKvw.png');
