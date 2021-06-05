@@ -435,14 +435,14 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 
 .mention {
 	transition: 150ms ease;
-	color: rgba(var(--accent), 1) !important;
+	color: rgba(var(--accent), 1);
 	background-color: rgba(var(--accent), 0.3);
 	padding: 3px 5px;
 	border-radius: 5px;
 }
 
 .mention:hover {
-	background-color: rgba(var(--accent), 0.3) !important;
+	background-color: rgba(var(--accent), 0.3);
 }
 
 #app-mount .container-1D34oG {
