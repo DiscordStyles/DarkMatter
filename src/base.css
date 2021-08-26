@@ -364,6 +364,7 @@ div[class^='sidebar-']>section>div:last-child {
 	width: calc(100% + 72px);
 	position: absolute;
 	left: -72px;
+	bottom: 0;
 }
 
 
