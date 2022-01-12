@@ -647,6 +647,7 @@ div[role="menuitem"]:active {
 }
 
 #app-mount div[data-list-id="billing-history"],
+#app-mount div[data-list-id^="members-"],
 #app-mount .media-engine-video,
 .react-datepicker,
 .react-datepicker__header,
