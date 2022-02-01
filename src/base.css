@@ -70,7 +70,7 @@ button {
 	--focus-primary: rgba(var(--accent), 1);
 }
 
- ::selection {
+::selection {
 	background-color: rgba(var(--accent-alt), 0.5);
 }
 
@@ -181,11 +181,9 @@ span[class^="expandedFolderBackground-"] {
 	left: 16px;
 }
 
-.wrapper-25eVIn {
-	zoom: .83334;
-}
-
-svg[class^="placeholderMask-"] {
+.wrapper-28eC3z,
+[data-list-id='guildsnav'] [data-dnd-name] > div,
+[data-list-id='guildsnav'] svg[width="48"] {
 	width: 40px;
 	height: 40px;
 }
@@ -272,10 +270,14 @@ div[class*='clickable-'][aria-expanded]>header {
 
 /* Outer containers */
 
+body {
+	background: var(--background-image) center/cover no-repeat;
+}
+
 #app-mount {
+    background-color: transparent;
 	--background-tertiary: transparent;
 	--background-secondary: transparent;
-	background: var(--background-image) center/cover no-repeat;
 }
 
 #app-mount>div[class^="app-"] {
@@ -446,7 +448,7 @@ div[id^="chat-messages-"][class*="cozy-"] div::before {
 	background-color: rgba(var(--accent), 0.3) !important;
 }
 
-#app-mount .container-1D34oG {
+#app-mount .container-2cd8Mz {
 	background: var(--background-primary);
 }
 
