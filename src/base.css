@@ -15,7 +15,7 @@ button {
 
 /* Root Variables */
 
- :root {
+:root {
 	--font-primary: 'Karla', sans-serif;
 	--font-display: var(--font-primary) !important;
 	/* Dark Matter Variables */
@@ -77,13 +77,12 @@ button {
 
 /* Scrollbars */
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 14px !important;
 }
 
  ::-webkit-scrollbar-thumb {
 	border-radius: 8px !important;
-	border: none !important;
 	border: 3px solid transparent !important;
 	background-color: rgba(var(--accent-alt), 1) !important;
 }
@@ -233,18 +232,15 @@ div[class^="sidebar-"]>nav>div[class^="searchBar"] {
 	height: 54px;
 }
 
-div[id^="members-"] {
+/* members wrapper */
+.container-2o3qEW {
 	--background-secondary: rgba(var(--black), 0.4);
 	--background-modifier-hover: rgba(var(--white), 0.07);
 	--background-modifier-active: var(--background-modifier-hover);
 	--background-modifier-selected: rgba(var(--white), 0.07);
 }
 
-div[id^="members-"]>div {
-	background-color: transparent;
-}
-
-div[id^="members-"] [class*="placeholder"] {
+div[data-list-id^="members-"] [class*="placeholder"] {
 	--backgorund-primary: var(--text-normal);
 }
 
@@ -261,7 +257,10 @@ div[class^='nowPlayingColumn'] {
 
 /* Sidebar Header */
 
-div[class*='clickable-'][aria-expanded]>header {
+nav[aria-label]>div>header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	height: 54px;
 	--background-accent: rgba(var(--accent), 1);
 	--background-modifier-hover: rgba(var(--black), 0.25);
@@ -280,7 +279,8 @@ body {
 	--background-secondary: transparent;
 }
 
-#app-mount>div[class^="app-"] {
+#app-mount>div[class^="appDevToolsWrapper-"] {
+	--background-primary: transparent;
 	--background-tertiary: transparent;
 	--background-secondary: rgba(var(--black), 0.7);
 	background-color: rgba(var(--black), 0.4);
@@ -297,13 +297,14 @@ nav+div[class^='base-'] > div[class^="notice"] {
 	border-radius: 0;
 }
 
-div[class^='base-']>div {
+div[class^='base-']>div,
+section[class*="themed-"] {
 	--background-secondary: rgba(var(--black), 0.7);
 	--background-tertiary: rgba(var(--white), 0.05);
 	--background-primary: rgba(var(--black), 0.8);
 }
 
-#app-mount>div:not([class^="app-"]),
+#app-mount>div:not([class^="appDevToolsWrapper-"]),
 .autocomplete-1vrmpx {
 	--background-primary: var(--background-solid);
 	--background-secondary: var(--background-solid-dark);
@@ -649,13 +650,14 @@ div[role="menuitem"]:active {
 }
 
 #app-mount div[data-list-id="billing-history"],
-#app-mount div[data-list-id^="members-"],
 #app-mount div[data-list-id^="private-channels-"],
 #app-mount .media-engine-video,
 .react-datepicker,
 .react-datepicker__header,
 .react-datepicker__day--outside-month,
-.react-datepicker__day--disabled {
+.react-datepicker__day--disabled,
+div[data-list-id^="members-"],
+div[data-list-id^="members-"]>div {
 	background-color: transparent !important;
 }
 
