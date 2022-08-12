@@ -78,26 +78,12 @@ button {
 /* Scrollbars */
 
 ::-webkit-scrollbar {
-	width: 10px !important;
-}
-
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-	border: 3px solid transparent !important;
-	border-radius: 6px !important;
-	background-clip: padding-box !important;
+	width: 14px !important;
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(var(--accent-alt), 1) !important;
 }
-
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-	background-color: transparent !important;
-}
-
 
 /* Titlebar */
 
