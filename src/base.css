@@ -77,25 +77,27 @@ button {
 
 /* Scrollbars */
 
+
 ::-webkit-scrollbar {
 	width: 14px !important;
 }
 
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-	border: 3px solid transparent !important;
-	border-radius: 8px !important;
-	background-clip: padding-box !important;
-}
-
 ::-webkit-scrollbar-thumb {
+	border-radius: 8px !important;
+	border: 3px solid transparent !important;
 	background-color: rgba(var(--accent-alt), 1) !important;
 }
 
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-	background-color: transparent !important;
+::-webkit-scrollbar-track {
+	visibility: hidden !important;
+	border-radius: 0px !important;
+	border: 0px solid transparent !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	background-clip: padding-box !important;
+}
+
+.none-2Eo-qx::-webkit-scrollbar {
+	display: none !important;
 }
 
 
