@@ -155,7 +155,7 @@ ul[data-list-id='guildsnav']>div[dir] {
 
 ul[data-list-id='guildsnav'] [class^="pill-"],
 ul[data-list-id='guildsnav'] [class^="pill-"]>div {
-	height: 40px !important;
+	/* height: 40px !important; Fix styles for bigger icons */
 }
 
 ul[data-list-id='guildsnav'] div[style*="height: 56"],
@@ -176,15 +176,15 @@ ul[data-list-id='guildsnav'] [class^="pill-"] span {
 span[class^="expandedFolderBackground-"] {
 	--background-secondary: rgba(var(--black), 0.25);
 	border-radius: 14px;
-	width: 40px;
-	left: 16px;
+	/* width: 40px; Fix styles for bigger icons */
+	/* left: 16px; Fix styles for bigger icons */
 }
 
 .wrapper-28eC3z,
 [data-list-id='guildsnav'] [data-dnd-name] > div,
 [data-list-id='guildsnav'] svg[width="48"] {
-	width: 40px;
-	height: 40px;
+	/* width: 40px; Fix styles for bigger icons */
+	/* height: 40px; Actual bug */
 }
 
 div[data-list-item-id="guildsnav___home"] {
@@ -192,7 +192,7 @@ div[data-list-item-id="guildsnav___home"] {
 }
 
 div[class^="unreadMentionsIndicatorBottom-"] {
-	bottom: 70px;
+	/* bottom: 70px; Fix styles for bigger icons */
 }
 
 #app-mount [data-list-item-id="guildsnav___home"]>div {
