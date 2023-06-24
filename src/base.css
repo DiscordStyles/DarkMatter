@@ -392,6 +392,9 @@ div[class^='sidebar-']>section>div:last-child {
 	left: -72px;
 	bottom: 0;
 }
+div[class^="sidebar-"]>section>div:last-child [class^="avatarWrapper-"] {
+    flex: 1;
+}
 
 
 /* Content */
