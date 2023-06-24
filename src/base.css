@@ -27,7 +27,7 @@ button {
 	--background-solid-darker: #0c0e12;
 	--accent: 37, 172, 232;
 	--accent-alt: 29, 101, 134;
-	--black: 0, 0, 0;
+	--md-black: 0, 0, 0;
 	--dm-white: 255, 255, 255;
 	/* BlurpleRecolor */
 	--accentcolor: var(--accent);
@@ -48,14 +48,14 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 	--background-floating: var(--background-solid);
 	--background-secondary: var(--background-solid);
 	--background-accent: var(--background-solid);
-	--background-message-hover: rgba(var(--black), 0.4);
+	--background-message-hover: rgba(var(--md-black), 0.4);
 	--channeltextarea-background: transparent;
 	--activity-card-background: rgba(var(--dm-white), 0.05);
 	--deprecated-store-bg: transparent;
-	--background-modifier-hover: rgba(var(--black), 0.3);
-	--background-modifier-active: rgba(var(--black), 0.3);
-	--background-modifier-selected: rgba(var(--black), 0.6);
-	--elevation-low: inset 0 -1px 0 0 rgba(var(--black), 0.3);
+	--background-modifier-hover: rgba(var(--md-black), 0.3);
+	--background-modifier-active: rgba(var(--md-black), 0.3);
+	--background-modifier-selected: rgba(var(--md-black), 0.6);
+	--elevation-low: inset 0 -1px 0 0 rgba(var(--md-black), 0.3);
 	--channels-default: rgba(var(--dm-white), 0.3);
 	--deprecated-quickswitcher-input-background: var(--background-solid);
 	--header-primary: rgba(var(--dm-white), 1);
@@ -132,7 +132,7 @@ div[class*="typeWindows-"]::after {
 	left: 0;
 	width: 100%;
 	height: 30px;
-	background: rgba(var(--black), 0.85);
+	background: rgba(var(--md-black), 0.85);
 	z-index: -1;
 }
 
@@ -146,9 +146,9 @@ ul[data-list-id='guildsnav'] {
 	--background-secondary: var(--background-solid);
     	--background-primary: rgba(var(--dm-white), 0.1);
 	margin-bottom: 70px;
-	background-color: rgba(var(--black), 0.6);
-	border-right: 1px solid rgba(var(--black), 0.2);
-	box-shadow: inset -10px 0px 20px -10px rgba(var(--black), 0.3);
+	background-color: rgba(var(--md-black), 0.6);
+	border-right: 1px solid rgba(var(--md-black), 0.2);
+	box-shadow: inset -10px 0px 20px -10px rgba(var(--md-black), 0.3);
 }
 
 ul[data-list-id='guildsnav'] ::-webkit-scrollbar {
@@ -180,7 +180,7 @@ ul[data-list-id='guildsnav'] [class^="pill-"] span {
 }
 
 span[class^="expandedFolderBackground-"] {
-	--background-secondary: rgba(var(--black), 0.25);
+	--background-secondary: rgba(var(--md-black), 0.25);
 	border-radius: 14px;
 	width: 40px;
 	left: 16px;
@@ -232,7 +232,7 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 div[class^="sidebar-"] nav,
 #private-channels {
 	background: var(--background-secondary) !important;
-	--background-tertiary: rgba(var(--black), 0.35);
+	--background-tertiary: rgba(var(--md-black), 0.35);
 }
 
 div[class^="sidebar-"]>nav>div[class^="searchBar"] {
@@ -241,11 +241,11 @@ div[class^="sidebar-"]>nav>div[class^="searchBar"] {
 
 /* members wrapper */
 .container-2o3qEW {
-	--background-secondary: rgba(var(--black), 0.4);
+	--background-secondary: rgba(var(--md-black), 0.4);
 	--background-modifier-hover: rgba(var(--dm-white), 0.07);
 	--background-modifier-active: var(--background-modifier-hover);
 	--background-modifier-selected: rgba(var(--dm-white), 0.07);
-    background: rgb(var(--black), 0.9);
+    background: rgb(var(--md-black), 0.9);
 }
 
 div[data-list-id^="members-"][class*="scrollerBase-"] {
@@ -258,7 +258,7 @@ div[data-list-id^="members-"] [class*="placeholder"] {
 
 div[class^='nowPlayingColumn'] {
 	--background-secondary: transparent;
-	--background-primary: rgba(var(--black), 0.5);
+	--background-primary: rgba(var(--md-black), 0.5);
 	--background-modifier-hover: rgba(var(--dm-white), 0.075);
 }
 div[class^="members-"] div[class^="member-"] {
@@ -278,7 +278,7 @@ nav[aria-label]>div>header {
 	justify-content: center;
 	height: 54px;
 	--background-accent: rgba(var(--accent), 1);
-	--background-modifier-hover: rgba(var(--black), 0.25);
+	--background-modifier-hover: rgba(var(--md-black), 0.25);
 }
 
 
@@ -297,15 +297,15 @@ body {
 #app-mount>div[class^="appDevToolsWrapper-"] {
 	--background-primary: transparent;
 	--background-tertiary: transparent;
-	--background-secondary: rgba(var(--black), 0.7);
-	background-color: rgba(var(--black), 0.4);
+	--background-secondary: rgba(var(--md-black), 0.7);
+	background-color: rgba(var(--md-black), 0.4);
 }
 div[class^="notAppAsidePanel-"]>div[class^="app-"]>div[class^="app-"],
 div[class^="app-"]>div[class^="bg-"] {
     background-color: transparent;
 }
 div[class*="baseLayer-"]>div[class^="container-"] {
-    background-color: rgb(var(--black), 0.4);
+    background-color: rgb(var(--md-black), 0.4);
 }
 
 nav+div [class^='sidebar-'],
@@ -321,9 +321,9 @@ nav+div[class^='base-'] > div[class^="notice"] {
 
 div[class^='base-']>div,
 section[class*="themed-"] {
-	--background-secondary: rgba(var(--black), 0.7);
+	--background-secondary: rgba(var(--md-black), 0.7);
 	--background-tertiary: rgba(var(--dm-white), 0.05);
-	--background-primary: rgba(var(--black), 0.8);
+	--background-primary: rgba(var(--md-black), 0.8);
 }
 
 #app-mount>div:not([class^="appDevToolsWrapper-"]),
@@ -340,7 +340,7 @@ section[class*="themed-"] {
 section[class*="themed-"] {
 	height: 54px;
 	box-shadow: var(--elevation-low);
-    background-color: rgb(var(--black), 0.925) !important;
+    background-color: rgb(var(--md-black), 0.925) !important;
 	--background-secondary: rgba(var(--dm-white), 0.1);
 }
 
@@ -378,7 +378,7 @@ section div[class^="toolbar"]>div[role][class*="selected-"] {
 div[class^='sidebar-']>section {
 	--background-primary: rgba(var(--dm-white), 0.07);
 	--background-secondary: rgba(var(--dm-white), 0.1);
-	--background-secondary-alt: rgba(var(--black), 0.95);
+	--background-secondary-alt: rgba(var(--md-black), 0.95);
 	margin-bottom: 70px;
 }
 
@@ -400,7 +400,7 @@ div[class^="sidebar-"]>section>div:last-child [class^="avatarWrapper-"] {
 /* Content */
 
 div[class^='chat'] {
-	--background-floating: rgba(var(--black), 0.5);
+	--background-floating: rgba(var(--md-black), 0.5);
     background: transparent;
 }
 
@@ -451,7 +451,7 @@ div[id^="chat-messages-"]>div[class^="buttonContainer-"] {
 }
 
 div[id^="chat-messages-"] {
-	--background-primary: rgba(var(--black), 0.5);
+	--background-primary: rgba(var(--md-black), 0.5);
 }
 
 div[id^="chat-messages-"]>div>[class^="avatar-"] {
@@ -515,7 +515,7 @@ html code.inline {
 div[aria-label*="_SETTINGS"],
 div[aria-label*="_DEBUG"] {
 	--background-primary: transparent;
-	--background-secondary: rgba(var(--black), 0.7);
+	--background-secondary: rgba(var(--md-black), 0.7);
 }
 
 div[class^="sidebarRegionScroller-"]>nav {
@@ -523,14 +523,14 @@ div[class^="sidebarRegionScroller-"]>nav {
 }
 
 div[class^="contentRegion-"] {
-	--background-primary: rgba(var(--black), 0.8);
+	--background-primary: rgba(var(--md-black), 0.8);
 }
 
 div[class^="contentRegion-"] div[style^="overflow: hidden scroll"] {
 	background-color: transparent;
-	--background-primary: rgba(var(--black), 0.1);
-	--background-secondary: rgba(var(--black), 0.2);
-	--background-secondary-alt: rgba(var(--black), 0.25);
+	--background-primary: rgba(var(--md-black), 0.1);
+	--background-secondary: rgba(var(--md-black), 0.2);
+	--background-secondary-alt: rgba(var(--md-black), 0.25);
 	--background-tertiary: rgba(var(--dm-white), 0.1);
 }
 
@@ -563,7 +563,7 @@ nav>div[role="tablist"],
 /* Server Discovery */
 
 div[class^="sidebar"]+[class^="pageWrapper"] {
-	--background-secondary: rgba(var(--black), 0.8);
+	--background-secondary: rgba(var(--md-black), 0.8);
 	background-color: var(--background-secondary);
 }
 
@@ -571,7 +571,7 @@ div[class^="sidebar"]+[class^="pageWrapper"] {
 /* Crash Page */
 
 div[class*="errorPage"] {
-	--background-secondary: rgba(var(--black), 0.7) !important;
+	--background-secondary: rgba(var(--md-black), 0.7) !important;
 }
 
 
@@ -733,7 +733,7 @@ div[data-list-id^="members-"]>div {
 }
 
 #app-mount .perksModal-fSYqOq {
-	background: rgba(var(--black), 0.7);
+	background: rgba(var(--md-black), 0.7);
 }
 
 #app-mount .card-FDVird:before {
