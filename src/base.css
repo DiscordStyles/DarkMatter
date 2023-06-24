@@ -35,8 +35,9 @@ button {
 	--vaccentcolor-active: rgb(var(--accent));
 }
 
-.theme-dark,
-.theme-light {
+:not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
+:not(div[class*="userProfile"]).theme-light,
+div[class*="userProfile"][class*="unThemed"].theme-light {
 	/* Discord vars */
 	--background-primary: var(--background-solid);
 	--background-mobile-primary: var(--background-primary);
