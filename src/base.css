@@ -69,6 +69,8 @@ div[class*="userProfile"][class*="unThemed"].theme-light {
 	--deprecated-card-bg: rgba(var(--dm-white), 0.05);
 	--text-link: rgba(var(--accent), 1);
 	--focus-primary: rgba(var(--accent), 1);
+    --modal-background: var(--background-solid);
+    --modal-footer-background: var(--background-solid-darker);
 }
 
 ::selection {
@@ -229,7 +231,7 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 
 div[class^="sidebar-"] nav,
 #private-channels {
-	background-color: transparent;
+	background: var(--background-secondary) !important;
 	--background-tertiary: rgba(var(--black), 0.35);
 }
 
@@ -742,4 +744,10 @@ div[data-list-id^="members-"]>div {
 div[class^="splashBackground"] canvas,
 div[class^="splashBackground"] img {
 	display: none;
+}
+
+/* Modals */
+
+div[class*="footerSeparator"] {
+	box-shadow: none !important;
 }
