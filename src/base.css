@@ -754,3 +754,11 @@ div[class^="splashBackground"] img {
 div[class*="footerSeparator"] {
 	box-shadow: none !important;
 }
+
+/* Forums */
+div[class^="content-"]>div[class^="container-"] {
+    background: var(--background-primary);
+}
+li[class^="card-"]>div[class^="container-"] {
+    background: var(--background-floating)
+}
