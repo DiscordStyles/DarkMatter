@@ -136,6 +136,9 @@ div[class*="typeWindows-"]::after {
 
 /* Guilds */
 
+nav[class*="guilds-"] {
+    background: transparent;
+}
 ul[data-list-id='guildsnav'] {
 	--background-secondary: var(--background-solid);
     	--background-primary: rgba(var(--white), 0.1);
@@ -220,6 +223,7 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 
 .platform-win [class^="sidebar-"] {
 	border-radius: 0;
+    background-color: transparent;
 }
 
 div[class^="sidebar-"] nav,
@@ -238,6 +242,11 @@ div[class^="sidebar-"]>nav>div[class^="searchBar"] {
 	--background-modifier-hover: rgba(var(--white), 0.07);
 	--background-modifier-active: var(--background-modifier-hover);
 	--background-modifier-selected: rgba(var(--white), 0.07);
+    background: rgb(var(--black), 0.9);
+}
+
+div[data-list-id^="members-"][class*="scrollerBase-"] {
+    background: transparent;
 }
 
 div[data-list-id^="members-"] [class*="placeholder"] {
@@ -248,6 +257,9 @@ div[class^='nowPlayingColumn'] {
 	--background-secondary: transparent;
 	--background-primary: rgba(var(--black), 0.5);
 	--background-modifier-hover: rgba(var(--white), 0.075);
+}
+div[class^="members-"] div[class^="member-"] {
+    background-color: transparent;
 }
 
 #channels div[class^="unread-"] {
@@ -285,6 +297,13 @@ body {
 	--background-secondary: rgba(var(--black), 0.7);
 	background-color: rgba(var(--black), 0.4);
 }
+div[class^="notAppAsidePanel-"]>div[class^="app-"]>div[class^="app-"],
+div[class^="app-"]>div[class^="bg-"] {
+    background-color: transparent;
+}
+div[class*="baseLayer-"]>div[class^="container-"] {
+    background-color: rgb(var(--black), 0.4);
+}
 
 nav+div [class^='sidebar-'],
 nav+div[class^='base-'] {
@@ -318,10 +337,11 @@ section[class*="themed-"] {
 section[class*="themed-"] {
 	height: 54px;
 	box-shadow: var(--elevation-low);
+    background-color: rgb(var(--black), 0.925) !important;
 	--background-secondary: rgba(var(--white), 0.1);
 }
 
-section>div>a[href="https:https://support.discord.com"] {
+section>div>a[href*="support.discord.com"] {
 	display: none;
 }
 
@@ -375,6 +395,7 @@ div[class^='sidebar-']>section>div:last-child {
 
 div[class^='chat'] {
 	--background-floating: rgba(var(--black), 0.5);
+    background: transparent;
 }
 
 div[class^="container-"][id^="chat-messages-"] {
@@ -720,59 +741,4 @@ div[data-list-id^="members-"]>div {
 div[class^="splashBackground"] canvas,
 div[class^="splashBackground"] img {
 	display: none;
-}
-
-/* USRBG */
-
-/*
- * USRBG User-Popout Implimentation
- * 
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
-*/
-
-.userPopout-3XzG_A {
-	overflow: hidden;
-	transform: translateZ(0) !important;
-	--USRBG-banner-height: 60px;
-}
-
-.userPopout-3XzG_A[style*="-user-"] {
-	--USRBG-banner-height: 120px;
-	--USRBG-avatar-offset: 76px;
-}
-
-.userPopout-3XzG_A[style*="-user-"] .profileBanner-33-uE1 {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: var(--user-popout-position, center) center;
-	background-image: var(--user-background);
-}
-
-.userPopout-3XzG_A[style*="-user-"] .profileBanner-33-uE1 {
-	height: var(--USRBG-banner-height, 120px);
-}
-
-.userPopout-3XzG_A[style*="-user-"] .avatarWrapperNormal-2tu8Ts {
-  	top: var(--USRBG-avatar-offset, 76px);
-}
-
-.userPopout-3XzG_A:not([style*="-user-"]) .avatar-22FtUu,
-.userPopout-3XzG_A:not([style*="-user-"]) .avatarHint-1E3LMl{
-	z-index: 1;
-}
-
-.userPopout-3XzG_A:not([style*="-user-"]) .avatar-22FtUu::after {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-	height: var(--USRBG-banner-height, 60px);
-	pointer-events: none;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: var(--user-popout-position, center) center;
-	background-image: var(--user-background);
 }
