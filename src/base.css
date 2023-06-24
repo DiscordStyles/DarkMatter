@@ -756,7 +756,7 @@ div[class*="footerSeparator"] {
 }
 
 /* Forums */
-div[class^="content-"]>div[class^="container-"] {
+.container-3wLKDe {
     background: var(--background-primary);
 }
 li[class^="card-"]>div[class^="container-"] {
