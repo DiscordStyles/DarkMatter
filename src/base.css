@@ -121,7 +121,7 @@ div[class*="typeWindows-"]>div[role="button"] {
 }
 
 div[class*="typeWindows-"]::after {
-	content: 'Discord';
+	content: '𝑇𝐻𝛴 𝛤𝛴𝐷𝑆 𝐵𝛤𝛥𝑉𝛴𝛤𝛹 - 𝐽𝑈𝑉𝛴';
 	font-weight: 5000;
 	line-height: 31px;
 	color: var(--text-muted);
