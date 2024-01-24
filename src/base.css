@@ -253,7 +253,7 @@ div[data-list-id^="members-"][class*="scrollerBase-"] {
 }
 
 div[data-list-id^="members-"] [class*="placeholder"] {
-	--backgorund-primary: var(--text-normal);
+	--background-primary: var(--text-normal);
 }
 
 div[class^='nowPlayingColumn'] {
